@@ -19,6 +19,23 @@ class RoomList extends Component {
     });
   }
 
+  handleChange(e) {
+      e.preventDefault();
+      let newChatRoom = e.target.value
+      this.setState({value: newChatRoom});
+  }
+
+  createRoom(e) {
+      e.preventDefault();
+      let newRoomName = this.state.value;
+      this.roomsRef.push({
+          name: newRoomName
+      })
+      this.setState({value: ''});
+  }
+
+
+
   render() {
     return (
       <div className="room-list">
@@ -30,6 +47,17 @@ class RoomList extends Component {
           )
         }
         </ul>
+        <form className="chat-form" onSubmit={(e) => this.createRoom(e)}>
+            <div>
+                <label>
+                    <div>Add Chat Room: </div>
+                    <div>
+                        <input type="text" value={this.state.value} placeholder="Chat Room Name" onChange={(e) => this.handleChange(e)} />
+                        <input className="submit-button" type="submit" value="Add" />
+                    </div>
+                </label>
+            </div>
+        </form>
       </div>
     );
   }
