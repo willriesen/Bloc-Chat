@@ -6,12 +6,12 @@ import MessageList from './components/MessageList';
 
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyDGEmgqNhOufABZ0CWJDgok_WTDkn0KX_Q",
-  authDomain: "bloc-chat-a9c9b.firebaseapp.com",
-  databaseURL: "https://bloc-chat-a9c9b.firebaseio.com",
-  projectId: "bloc-chat-a9c9b",
+  apiKey: "AIzaSyCoNKn1fefpZ8Yw0Ee7ob2NNtemIgOsT8s",
+  authDomain: "bloc-chat-react-f44c9.firebaseapp.com",
+  databaseURL: "https://bloc-chat-react-f44c9.firebaseio.com",
+  projectId: "bloc-chat-react-f44c9",
   storageBucket: "",
-  messagingSenderId: "92411543631"
+  messagingSenderId: "434006141483"
 };
 firebase.initializeApp(config);
 
