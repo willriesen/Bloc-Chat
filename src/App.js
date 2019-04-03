@@ -45,7 +45,7 @@ setUser(currentUser) {
           <h1>Bloc Chat</h1>
         </header>
         <div className="logIn">
-          <User firebase={firebase} setUser={this.setUser.bind(this)} user={this.state.user} />
+        <User firebase={firebase} setUser={() => {}} user={this.state.user} />
         </div>
         <RoomList firebase={firebase}
         updateRoom={this.updateRoom.bind(this)}
